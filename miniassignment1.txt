@@ -1,0 +1,39 @@
+create table trip(trip_no INT,from_city CHAR(20),to_city CHAR(20),departure_date date,return_date date,
+primary key(trip_no))
+
+create table Dept(dept_no VARCHAR(10),dept_name CHAR(10),primary key(dept_no),foreign key(s_no) references Salesman(s_no))
+
+create table Expense(E_id INTEGER,amount INTEGER,primary key(E_id))
+
+INSERT INTO SALESMAN 
+VALUES (01,'AKASH',2015,'10A'),
+(02,'DILIP',2010,'1A'),(03,'ASHISH',2018,'20B')
+
+SELECT * FROM SALESMAN
+
+create table trip(trip_no INT,from_city CHAR(20),to_city CHAR(20),departure_date date,return_date date,
+primary key(trip_no))
+
+INSERT INTO TRIP
+VALUES(100,'kolkata','bangalore','2015-05-04','2015-05-10'),
+(101,'mumbai','delhi','2016-08-10','2016-06-14')
+
+insert into dept
+values('100c','cse'),('102','mech'),('150h','civil')
+
+insert into expense
+values(30,20000),(40,30000),(35,8000),(38,6000)
+
+select * from trip
+
+select * from dept
+select * from expense
+
+
+
+create table salesman (s_no INT,s_name CHAR(30), start_year int,dept_no varchar(10),
+primary key(s_no))
+
+INSERT INTO SALESMAN 
+VALUES (01,'AKASH',2015,'10A'),
+(02,'DILIP',2010,'1A'),(03,'ASHISH',2018,'20B')
